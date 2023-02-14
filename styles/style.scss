@@ -109,7 +109,6 @@ header {
       text-decoration: none;
       color: black;
       font-size: 2rem;
-      //   background-color: green;
 
       .github_icon {
         width: 60px;
@@ -163,6 +162,153 @@ header {
       text-decoration: none;
       color: black;
       font-size: 2rem;
+    }
+  }
+}
+
+@media screen and(max-width:500px) {
+  header {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+
+  #about {
+    margin-bottom: 80px;
+    .career {
+      font-family: "Shippori Antique B1", sans-serif;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      line-height: 30px;
+    }
+  }
+
+  #portfolio {
+    margin-bottom: 80px;
+
+    .portfolio_list {
+      display: flex;
+      overflow: hidden;
+
+      &:hover ul {
+        animation-play-state: paused;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        animation: infinity-scroll-left 30s infinite linear 0.5s both;
+
+        li {
+          img {
+            width: calc(100vw / 3);
+            height: 100%;
+            object-fit: cover;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+          a {
+            display: block;
+            height: calc(100vh / 3);
+          }
+        }
+      }
+
+      @keyframes infinity-scroll-left {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    }
+
+    .portfolio_list_2 {
+      ul {
+        animation: infinity-scroll-left_2 30s infinite linear 0.5s both;
+      }
+      @keyframes infinity-scroll-left_2 {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  #contact {
+    margin-bottom: 80px;
+    div {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .github_link {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+
+        .github_icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .twitter_link {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+
+        .twitter_icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .mail_address_link {
+      grid-area: mail_address_link;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+        margin-right: 12px;
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+        border-radius: 100%;
+        border: 1px black solid;
+        color: black;
+        background-color: white;
+      }
+
+      a {
+        font-size: 1.6rem;
+      }
     }
   }
 }
