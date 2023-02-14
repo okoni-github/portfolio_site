@@ -1,0 +1,300 @@
+/* 
+common 
+*/
+
+* {
+  font-family: "Noto Sans JP";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 
+header-section
+ */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 15px 200px; */
+  margin: 15px 10%;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 40px;
+  font-size: 0.8rem;
+}
+
+/* 
+mainvisual-section
+ */
+
+.mainvisual {
+  /* width: 100%; */
+  margin-bottom: 40px;
+}
+
+.mainvisual img {
+  width: 100%;
+}
+
+.mainvisual2 {
+  display: none;
+  padding: 130px 60px;
+  background: url("./img/main-vsual-nontitle.png") no-repeat left / cover;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mainvisual2 h1 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.mainvisual2 p {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+/* 
+about-section
+ */
+
+.about {
+  margin-bottom: 10px;
+}
+
+.about div {
+  display: flex;
+}
+
+.about div img {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.about div p {
+  /* width: 50%; */
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+
+/*
+course-section
+*/
+
+.course {
+  margin-bottom: 70px;
+}
+
+.course ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course ul li {
+  list-style: none;
+  margin-right: 10px;
+  /* margin: 0px auto; */
+}
+
+.course ul li:last-child {
+  margin-right: 0px;
+}
+
+.course ul li img {
+  max-width: 95%;
+}
+
+.course ul li p {
+  font-size: 0.85rem;
+}
+
+/*
+contact-section
+*/
+
+.contact {
+  text-align: center;
+  padding-bottom: 60px;
+  border-bottom: 1px solid gray;
+}
+
+.contact p {
+  font-size: 0.9rem;
+}
+
+.contact form input {
+  font-size: 1.1rem;
+  width: 450px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 50px;
+}
+
+.contact form input::placeholder {
+  text-align: left;
+}
+
+.contact form div button {
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(230, 111, 111);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 60px;
+}
+
+/*
+footer-section
+ */
+
+footer {
+  padding: 20px 0;
+  font-size: 0.6rem;
+  text-align: right;
+}
+
+/* 
+responsive
+ */
+
+@media screen and (max-width: 768px) {
+  /* 
+common 
+*/
+
+  .container {
+    padding: 0 6%;
+  }
+
+  .title {
+    margin-bottom: 22px;
+  }
+
+  /* 
+header-section
+ */
+
+  header {
+    text-align: center;
+    display: block;
+  }
+
+  header h1 {
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  /* 
+mainvisual-section
+ */
+
+  .mainvisual img {
+    display: none;
+  }
+
+  .mainvisual2 {
+    display: block;
+  }
+
+  /* 
+about-section
+ */
+
+  .about {
+    margin-bottom: 60px;
+  }
+
+  .about div {
+    flex-direction: column;
+  }
+
+  .about div img {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .about div p {
+    margin: 0;
+  }
+
+  /*
+course-section
+*/
+
+  .course {
+    margin-bottom: 30px;
+  }
+
+  .course ul {
+    flex-direction: column;
+  }
+
+  .course ul li {
+    margin: 0 0 16px 0;
+  }
+
+  .course ul li img {
+    max-width: 100%;
+  }
+
+  /*
+contact-section
+*/
+
+  .contact {
+    padding-bottom: 100px;
+  }
+
+  .contact p {
+    margin: 30px 0 18px 0;
+  }
+
+  .contact form input {
+    width: 100%;
+  }
+
+  .contact form div button {
+    width: 100%;
+  }
+
+  /*
+footer-section
+ */
+
+  footer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+#mainvisual {
+  width: 100%;
+  margin-bottom: 100px;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+  }
+}
+
+@media screen and(max-width:900px) {
+  #mainvisual {
+    margin-bottom: 70px;
+  }
+}

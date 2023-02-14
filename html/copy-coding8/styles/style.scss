@@ -1,0 +1,43 @@
+@import "./_header";
+@import "./_news";
+@import "./_create_new_values";
+@import "./_science_technology";
+@import "./_map";
+@import "./_footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif JP", serif;
+}
+
+body {
+  background-color: rgb(221, 221, 216);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  .main_title {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .sub_title {
+    font-size: 0.8rem;
+  }
+}

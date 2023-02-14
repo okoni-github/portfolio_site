@@ -1,0 +1,348 @@
+/* common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.readmore-button {
+  text-align: center;
+}
+
+.readmore-button a {
+  padding: 16px 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  border: 1px solid black;
+}
+
+.readmore-button a:hover {
+  opacity: 0.6;
+}
+
+/* header-section */
+
+header {
+  position: relative;
+  background-image: url("./img/mainvisual.jpeg");
+  /* 横幅が100%になったらheightは変わらずにズームされる */
+  background-size: cover;
+  /* 100%だと横縦比が維持されてheightが変わってしまう */
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  /* 画像の中央を表示 */
+  background-position: center;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 70px;
+}
+
+header img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* tex-section */
+
+#text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#text h1 {
+  font-weight: 900;
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+}
+
+#text p {
+  font-size: 0.85rem;
+}
+
+/* main-contents-section */
+
+#main-contents {
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  max-width: 530px;
+  position: relative;
+  /* margin: 0 auto; */
+  /* width: 100%; */
+}
+
+.content:hover {
+  opacity: 0.7;
+}
+
+#main-contents img {
+  width: 100%;
+  max-width: 530px;
+}
+
+.archive-content {
+  margin-right: 20px;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  width: 290px;
+}
+
+.main-text h1 {
+  font-size: 1.2rem;
+}
+.main-text p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* fashion-style-content-section */
+
+#fashion-style-content {
+  max-width: 100%;
+  padding-top: 60px;
+  height: 520px;
+  background: url("./img/fashion.jpeg") no-repeat center / cover;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#fashion-style-content h1 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#fashion-style-content p {
+  font-size: 0.85rem;
+}
+
+.fashion-style-content-text {
+  margin-bottom: 40px;
+}
+
+/* catalog-section */
+
+#catalog {
+  background-color: rgb(248, 248, 248);
+}
+
+.catalog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+#catalog article h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#catalog article p {
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+#catalog article p:last-child {
+  margin-bottom: 0;
+}
+
+#catalog img {
+  width: 50%;
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+/* antique-section */
+
+#antique {
+  background-color: rgb(248, 248, 248);
+}
+
+.antique-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+#antique article h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#antique article p {
+  font-size: 0.84rem;
+  margin-bottom: 30px;
+}
+
+#antique article p:last-child {
+  margin-bottom: 0;
+}
+
+#antique article p:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+#antique img {
+  width: 50%;
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+/* footer-section */
+
+#footer-content {
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 300px;
+}
+
+.footer-content img {
+  max-width: 33%;
+}
+
+.footer-text-1 h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-text-1 ul li {
+  list-style-position: inside;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.footer-text-1 {
+  max-width: 33%;
+}
+
+.footer-text-2 {
+  max-width: 33%;
+}
+
+.footer-text-2 h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-text-2 p {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-size: 0.7rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 896px) {
+  /* main-contents-section */
+  #main-contents {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .content img {
+    max-width: 100% !important;
+  }
+
+  .archive-content {
+    margin: 0 0 30px 0;
+  }
+
+  #fashion-style-content {
+    padding-top: 30px;
+  }
+
+  #catalog {
+  }
+
+  .catalog-content {
+    flex-direction: column;
+  }
+
+  #catalog img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 60px 0;
+  }
+
+  .antique-content {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  #antique article {
+    margin-bottom: 60px;
+  }
+
+  #antique img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 480px;
+  }
+
+  .footer-content img {
+    margin: 30px auto 40px auto;
+  }
+
+  .footer-text-1 {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .footer-text-2 {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+#science_technology {
+  writing-mode: vertical-lr;
+  margin-bottom: 180px;
+
+  .title {
+    margin-right: 10px;
+    white-space: nowrap;
+
+    .main_title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .science_technology_img {
+    position: relative;
+    width: 65%;
+    img {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 100px;
+    }
+    .science_technology_text {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 60%;
+      padding: 50px 60px;
+      text-align: center;
+      writing-mode: initial;
+      color: white;
+      background-color: rgba(255, 88, 50, 0.556);
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  #science_technology {
+    margin-bottom: 100px;
+
+    .title {
+      margin-right: 10px;
+
+      .main_title {
+        font-size: 1.5rem;
+      }
+      .sub_title {
+        display: none;
+      }
+    }
+
+    .science_technology_img {
+      width: 90%;
+      img {
+        margin-top: 70px;
+      }
+      .science_technology_text {
+        padding: 30px 60px;
+      }
+    }
+  }
+}

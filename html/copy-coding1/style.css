@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Cinzel", serif; */
+}
+
+header {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header img {
+  width: 120px;
+}
+
+.mainvisual {
+  display: flex;
+}
+
+.mainvisual img {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+}
+
+.title h1 {
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  margin-bottom: 120px;
+}
+
+.about {
+  width: 100px;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+
+section h1 {
+  border-bottom: 1px solid;
+}
+
+.profile-main {
+  display: inline-block;
+}
+
+.profile-main h4 {
+  margin: 10px 0px;
+}
+
+.profile-main p {
+  margin: 10px 0px;
+}
+
+.bicycle-container {
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+  /* margin-bottom: 200px; */
+}
+
+.bicycle-container ul {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bicycle-container ul li {
+  margin: 10px;
+}
+
+.bicycle-container ul li img {
+  justify-content: center;
+  align-items: center;
+}
+
+.bicycle-container h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.bicycle-container p {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bicycle-text h4 {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.bicycle-text p {
+  font-size: 14px;
+}
+
+.bicycle-container ul li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.bicycle-container ul li img {
+  max-width: 100%;
+}
+
+footer {
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 32px;
+  }
+
+  .mainvisual img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 98%; */
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .about {
+    margin: 0px;
+  }
+
+  .bicycle-container ul {
+    flex-direction: column;
+  }
+
+  .bicycle-container img {
+    /* width: 90%; */
+  }
+
+  .bicycle-text h4 {
+    margin: 0;
+  }
+
+  .bicycle-text p {
+    margin: 10px 0px;
+  }
+}
